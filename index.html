@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/CSS">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <div id="input">
+                    <p id="input-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <button onclick="CLear()" id="clear" class="operator">AC</button>
+                <button  id="%" class="operator">&nbsp;</button>
+                <button onclick="backspace()" id="backspace" class="operator">DEL</button>
+                <button onclick="addElement('/')" id="/" class="operator">/</button>
+                <button onclick="addElement('7')" id="7" class="number">7</button>
+                <button onclick="addElement('8')" id="8" class="number">8</button>
+                <button onclick="addElement('9')" id="9" class="number">9</button>
+                <button onclick="addElement('*')" id="*" class="operator">*</button>
+                <button onclick="addElement('4')" id="4" class="number">4</button>
+                <button onclick="addElement('5')" id="5" class="number">5</button>
+                <button onclick="addElement('6')" id="6" class="number">6</button>
+                <button onclick="addElement('-')" id="-" class="operator">-</button>
+                <button onclick="addElement('1')" id="1" class="number">1</button>
+                <button onclick="addElement('2')" id="2" class="number">2</button>
+                <button onclick="addElement('3')" id="3" class="number">3</button>
+                <button onclick="addElement('+')" id="+" class="operator">+</button>
+                <button onclick="addElement('00')" id="00" class="number">00</button>
+                <button onclick="addElement('0')" id="0" class="number">0</button>
+                <button onclick="addElement('.')" id="." class="number">.</button>
+                <button onclick="calculate()" id="=" class="operator">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
